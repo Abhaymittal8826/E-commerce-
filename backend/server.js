@@ -20,7 +20,7 @@ connectCloudinary()
 //middleware
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'https://e-commerce-frontend-three-vert.vercel.app', 
   credentials: true              
 }));
 //api endpoints
