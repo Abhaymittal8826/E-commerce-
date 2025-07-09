@@ -1,17 +1,31 @@
-<<<<<<< HEAD
-# E-Commerce-App
-  
+🛒 E-Commerce-App
+Welcome to E-Commerce-App, a full-stack E-Commerce website built using the powerful MERN stack (MongoDB, Express.js, React, Node.js).
 
--E-Commerce Website made with ReactJS, Node.js  
-=======
-E-Commerce-App
+🔗 Live Demo: https://e-commerce-frontend-three-vert.vercel.app
 
-A full-stack E-Commerce website using the MERN stack (MongoDB, Express.js, React, Node.js).
+🚀 Features
+🛍️ Modern UI: Sleek and responsive design built with ReactJS.
 
-https://e-commerce-frontend-three-vert.vercel.app/login
+🧑‍💼 Admin Dashboard: Manage products, users, and orders seamlessly.
 
-Admin Dashboard: To manage products, orders, and users.
-Payment Gateway: Integrate Stripe or PayPal to handle payments.
-Product Reviews & Ratings: Allow users to rate and review products.
-User Order History: Let users view their past orders in their profile.
->>>>>>> 09675a209e5430cf223f91562f3b11a834831608
+💳 Secure Payments: Integrates with Stripe/PayPal for smooth transactions.
+
+⭐ Product Reviews & Ratings: Users can leave feedback on products.
+
+📦 Order History: Customers can view their previous orders anytime.
+
+🔐 Authentication & Authorization: Secure login/signup and role-based access.
+
+📂 Full CRUD Support: Create, Read, Update, Delete functionality for products and users.
+
+🛠 Tech Stack
+Frontend: ReactJS, Tailwind CSS 
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+Authentication: JWT, bcrypt
+
+Payment Integration: Stripe / PayPal
+
