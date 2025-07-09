@@ -12,7 +12,7 @@ const Collection = () => {
   const[category,setCategory]=useState([]);
   const[subCategory,setSubCategory]=useState([]);
   const[sortType,setSortType]=useState('relevant');
-
+   
   const toggleCategory=(e)=>{
     
     if(category.includes(e.target.value)){
@@ -22,6 +22,7 @@ const Collection = () => {
       setCategory(prev=>[...prev, e.target.value])
     }
   }
+  
   const toggleSubCategory=(e)=>{
 
     if(subCategory.includes(e.target.value)){

@@ -3,13 +3,12 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [mode, setMode] = useState('Sign Up'); // renamed for clarity
+  const [mode, setMode] = useState('Sign Up'); 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
-  
+          
   useEffect(() => {
     if (localStorage.getItem('isLoggedIn')) {
       navigate('/');
@@ -32,7 +31,8 @@ const Login = () => {
     try {
       const { data } = await axios.post(url, payload, { withCredentials: true });
 
-      localStorage.setItem('isLoggedIn', 'true'); // ✅ mark user as logged in
+
+      localStorage.setItem('isLoggedIn', 'true'); 
       alert(`Success: ${data.message || 'Logged in / Registered'}`);
       navigate('/');
     } catch (err) {

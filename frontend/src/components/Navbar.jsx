@@ -2,23 +2,26 @@ import React, { useContext, useState } from 'react';
 import { assets } from '../assets/assets';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContext';
+import Login from '../pages/Login';
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
-  const { navigate , setShowSearch, token , setToken , setCartItems,  getCartCount } = useContext(ShopContext);
+  const navigate = useNavigate(); // ✅ proper way to use it
+  const { setShowSearch, token , setToken , setCartItems,  getCartCount } = useContext(ShopContext);
   
  
   const handleLogout = () => {
+      console.log("Hi");
     localStorage.removeItem("token");
-    navigate('/login');
-    window.location.reload(); // Reload the page to reflect the logout
-     setToken(''); // Clear the token state
+    localStorage.removeItem('isLoggedIn');
+     setToken('');
+    navigate('/Login');
   };
 
   const toggleDarkMode = () => {
     document.documentElement.classList.toggle('dark');
   };
-
+   
   return (
     <div className='flex items-center justify-between py-5 font medium'>
       <Link to='/'>
@@ -40,7 +43,7 @@ const Navbar = () => {
           <p>About</p>
         </NavLink>
       </ul>
-
+         
       {/* Action Buttons */}
       <div className='flex items-center gap-6'>
         <img onClick={() => setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
@@ -48,7 +51,7 @@ const Navbar = () => {
           <Link to='/login'>
             <img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" />
           </Link>
-          <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
+          <div className='group-hover:block hidden absolute  right-0 pt-4'>
             <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
               <p className='cursor-pointer hover:text-black'>My Profile</p>
               <p onClick={() => navigate('/orders')} className='cursor-pointer hover:text-black'>Orders</p>
@@ -65,7 +68,7 @@ const Navbar = () => {
           <p>Dark Mode</p>
         </button>
       </div>
-
+      
       {/* Sidebar for small screens */}
       <div className={`absolute top-0 right-0 bottom-0 bg-white transition-all ${visible ? 'w-full' : 'w-0 overflow-hidden'}`}>
         <div className='flex flex-col text-gray-600'>

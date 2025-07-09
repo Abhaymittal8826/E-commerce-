@@ -20,8 +20,8 @@ connectCloudinary()
 //middleware
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:5173', // your frontend origin
-  credentials: true               // allow cookies
+  origin: 'http://localhost:5173', 
+  credentials: true              
 }));
 //api endpoints
 
