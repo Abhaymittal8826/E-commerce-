@@ -1,0 +1,49 @@
+{
+  "hash": "e61577f1",
+  "configHash": "84661b3a",
+  "lockfileHash": "9841ac8d",
+  "browserHash": "a7ba3396",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "9b0ed854",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "c69fe89f",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "296e04ed",
+      "needsInterop": false
+    },
+    "react-toastify": {
+      "src": "../../node_modules/react-toastify/dist/index.mjs",
+      "file": "react-toastify.js",
+      "fileHash": "449931f3",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "efc2a5be",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UKCRZMCT": {
+      "file": "chunk-UKCRZMCT.js"
+    },
+    "chunk-EZKPPOFF": {
+      "file": "chunk-EZKPPOFF.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
+}
